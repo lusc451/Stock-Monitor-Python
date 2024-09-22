@@ -1,6 +1,10 @@
 import yfinance as yf
 import pandas as pd
 import streamlit as st
+from datetime import datetime, timedelta
+
+dt_start = datetime.today() - timedelta(days=30)
+dt_end = datetime.today()
 
 #Definindo o ticker da ação
 ticker_symbol = 'BEEF3.SA'
